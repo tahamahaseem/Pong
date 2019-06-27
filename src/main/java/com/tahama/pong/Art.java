@@ -4,7 +4,7 @@ import java.awt.Graphics;
 import java.awt.event.KeyEvent;
 import java.awt.event.MouseEvent;
 
-public class Art implements IArt {
+public class Art implements IArt {//lets all drawing have certain features
 
 	@Override
 	public void draw(Graphics g) {

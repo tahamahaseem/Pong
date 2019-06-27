@@ -4,7 +4,7 @@ import java.awt.Color;
 import java.awt.Graphics;
 
 public class Ball extends Art {
-
+	//sets the balls position and dimensions
 	private int x = 0;
 	private int y = 0;
 	private int iX = 1;
@@ -14,7 +14,7 @@ public class Ball extends Art {
 	private int centerX;
 	private int centerY;
 	private int frameWidth;
-
+	//lets other classes access the balls position, dimensions and other variables
 	public int getX() {
 		return x;
 	}
@@ -72,6 +72,7 @@ public class Ball extends Art {
 	}
 
 	public Ball(int d) {
+		//sets ball in the middle of the screen
 		x = (d / 2) - 10;
 		y = (d / 2) - diameter / 2;
 		frameWidth = d;
@@ -79,15 +80,18 @@ public class Ball extends Art {
 
 	@Override
 	public void draw(Graphics g) {
+		//draws the ball
 		g.setColor(Color.BLACK);
 		g.fillOval(x - 3, y - 3, diameter + 6, diameter + 6);
 		g.setColor(Color.WHITE);
 		g.fillOval(x, y, diameter, diameter);
+		//moves the ball
 		x += iX;
 		y += iY;
 		radius = diameter / 2;
 		centerX = x + radius;
 		centerY = y + radius;
+		//lets ball bounce of the top and bottom sides of the frame
 		if (y + radius <= 20) {
 			iY = iY * -1;
 		}

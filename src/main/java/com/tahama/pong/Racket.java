@@ -34,24 +34,25 @@ public class Racket extends Art {
 
 	@Override
 	public void draw(Graphics g) {
-
+		// checks whether the ball hit the left or right racket
 		if (playerSide.equals("LEFT")) {
 			cm.collideLeft(pong, x, y, width, height);
 		} else if (playerSide.equals("RIGHT")) {
 			cm.collideRight(pong, x, y, width, height);
 		}
-		if (moveUp) {
+		if (moveUp) {// when the up keys are pressed, racket will go up
 			y -= 2;
 			if (y < 16) {
 				y += 2;
 			}
-		} else if (moveDown) {
+		} else if (moveDown) {// when the down keys are pressed, racket will go down
 			y += 2;
 			if (y + height > dimension - 42) {
 
 				y -= 2;
 			}
-		}
+		} // checks which background is on. Depending on the background set, the rackets
+			// colors will set according to that
 		if (playerColor == 0) {
 			g.setColor(new Color(0, 255, 255, 150));
 		} else if (playerColor == 1) {
@@ -62,7 +63,7 @@ public class Racket extends Art {
 			g.setColor(new Color(150, 50, 60, 200));
 		}
 
-		g.fillRect(x, y, width, height);
+		g.fillRect(x, y, width, height);// makes racket
 	}
 
 	public int getY() {
@@ -74,7 +75,7 @@ public class Racket extends Art {
 	}
 
 	@Override
-	public void keyReleased(KeyEvent e) {
+	public void keyReleased(KeyEvent e) {//checks if up or down keys were released
 		if (e.getKeyCode() == key1) {
 			moveUp = false;
 
@@ -86,7 +87,7 @@ public class Racket extends Art {
 	}
 
 	@Override
-	public void keyPressed(KeyEvent e) {
+	public void keyPressed(KeyEvent e) {//checks if up or down keys were pressed
 		if (e.getKeyCode() == key1) {
 			moveUp = true;
 

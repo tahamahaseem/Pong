@@ -43,12 +43,12 @@ public class Background extends Art {
 		g.fillRect(0, d - 42, d, 15);
 		g.fillRect(0, 0, 15, d);
 		g.fillRect(d - 20, 0, 15, d);
-		if (c > 1)//this allows the game to have black fade out effect, when game is opened
+		if (c > 1)
 
 		{
 			g.setColor(new Color(0, 0, 0, (int) c));
 			g.fillRect(0, 0, d, d);
-			c -= 0.2;
+			c -= 0.2;//this allows the game to have black fade out effect, when game is opened
 		}
 	}
 }

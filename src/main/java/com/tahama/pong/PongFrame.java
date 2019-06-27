@@ -6,17 +6,17 @@ import javax.swing.JFrame;
 
 public class PongFrame extends JFrame {
 	private PongPanel pane;
-	private int MusicDuration = 0;
 
 	public PongFrame(int d) {
 		setSize(d, d);
+		setLocationRelativeTo(null);
 		setResizable(false);
 		setLayout(new FlowLayout());
 		setVisible(true);
 		pane = new PongPanel();
 		setContentPane(pane);
 		pane.setFocusable(true);
-		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);//creates Frame and Pane
 	}
 
 	public void add(IArt drawing) {
@@ -25,21 +25,14 @@ public class PongFrame extends JFrame {
 	}
 
 	public void startGame() {
-		SoundManager.sound("Historic.wav");
+		SoundManager.sound("Silence At Sunlight.wav",true);//plays music
 		while (true) {
-			pane.repaint();
+			pane.repaint();//repaints everything in the game
 			try {
 				Thread.sleep(3);
-				MusicDuration = MusicDuration + 3;
-				if (MusicDuration == 170000) {
-					SoundManager.sound("Historic.wav");
-					MusicDuration = 0;
-				}
 			} catch (InterruptedException e) {
-				// TODO Auto-generated catch block
 				e.printStackTrace();
 			}
-
 		}
 	}
 }

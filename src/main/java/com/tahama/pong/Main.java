@@ -10,7 +10,7 @@ public class Main {
 		int dimension = 900;//dimensions of the frame
 		Background bg = new Background(num, dimension);
 		PongFrame pong = new PongFrame(dimension);
-		pong.setTitle("Pong");
+		pong.setTitle("| Pong |");
 		MenuScreen menu = new MenuScreen(dimension);
 		menu.interaction(pong, num);
 		pong.add(bg);

@@ -9,7 +9,8 @@ import java.awt.event.MouseListener;
 import java.util.ArrayList;
 
 public class PongPanel extends Container {
-	private ArrayList<IArt> drawings = new ArrayList<>();
+	private ArrayList<IArt> drawings = new ArrayList<>();// an array list that holds all the drawings/components of the
+															// game. (Rackets, Ball, Menu Screen, etc)
 
 	public PongPanel() {
 		setFocusable(true);
@@ -21,6 +22,7 @@ public class PongPanel extends Container {
 			}
 
 			@Override
+			// lets every drawing(Rackets, Ball, Etc) that a key was released
 			public void keyReleased(KeyEvent e) {
 				for (IArt drawable : drawings) {
 					drawable.keyReleased(e);
@@ -28,6 +30,7 @@ public class PongPanel extends Container {
 			}
 
 			@Override
+			// lets every drawing(Rackets, Ball, Etc) that a key was pressed
 			public void keyPressed(KeyEvent e) {
 				for (IArt drawable : drawings) {
 					drawable.keyPressed(e);
@@ -38,6 +41,7 @@ public class PongPanel extends Container {
 		addMouseListener(new MouseListener() {
 
 			@Override
+			// lets every drawing(Rackets, Ball, Etc) that the mouse was released
 			public void mouseReleased(MouseEvent e) {
 				for (IArt drawable : drawings) {
 					drawable.mouseReleased(e);
@@ -45,6 +49,7 @@ public class PongPanel extends Container {
 			}
 
 			@Override
+			// lets every drawing(Rackets, Ball, Etc) that the mouse was pressed
 			public void mousePressed(MouseEvent e) {
 				for (IArt drawable : drawings) {
 					drawable.mousePressed(e);
@@ -52,6 +57,7 @@ public class PongPanel extends Container {
 			}
 
 			@Override
+			// lets every drawing(Rackets, Ball, Etc) that the mouse cursor exited
 			public void mouseExited(MouseEvent e) {
 				for (IArt drawable : drawings) {
 					drawable.mouseExited(e);
@@ -59,6 +65,7 @@ public class PongPanel extends Container {
 			}
 
 			@Override
+			// lets every drawing(Rackets, Ball, Etc) that the mouse cursor entered
 			public void mouseEntered(MouseEvent e) {
 				for (IArt drawable : drawings) {
 					drawable.mouseEntered(e);
@@ -66,6 +73,7 @@ public class PongPanel extends Container {
 			}
 
 			@Override
+			// lets every drawing(Rackets, Ball, Etc) that the mouse cursor clicked
 			public void mouseClicked(MouseEvent e) {
 				for (IArt drawable : drawings) {
 					drawable.mouseClicked(e);
@@ -77,6 +85,7 @@ public class PongPanel extends Container {
 	@Override
 	public void paint(Graphics g) {
 		super.paint(g);
+		// gives all drawings the ability to be repainted
 		try {
 			for (IArt drawing : drawings) {
 				drawing.draw(g);

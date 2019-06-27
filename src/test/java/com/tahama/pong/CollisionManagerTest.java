@@ -1,8 +1,7 @@
 package com.tahama.pong;
 
-import static org.junit.jupiter.api.Assertions.assertEquals;
-
-import org.junit.jupiter.api.Test;
+import org.testng.Assert;
+import org.testng.annotations.Test;
 
 class CollisionManagerTest {
 	private CollisionManager cm = new CollisionManager();
@@ -32,10 +31,10 @@ class CollisionManagerTest {
 				cm.collideLeft(ball, 65, 20, 10, 150);
 				int[] expected = expectedValues[index++];
 
-				assertEquals(expected[0], x);
-				assertEquals(expected[1], y);
-				assertEquals(expected[2], ball.getiX());
-				assertEquals(expected[3], ball.getiY());
+				Assert.assertEquals(expected[0], x);
+				Assert.assertEquals(expected[1], y);
+				Assert.assertEquals(expected[2], ball.getiX());
+				Assert.assertEquals(expected[3], ball.getiY());
 			}
 		}
 	}
@@ -63,10 +62,10 @@ class CollisionManagerTest {
 				Ball ball = setupBall(x, y, -1, 1);
 				cm.collideRight(ball, 130, 20, 10, 150);
 				int[] expected = expectedValues[index++];
-				assertEquals(expected[0], x);
-				assertEquals(expected[1], y);
-				assertEquals(expected[2], ball.getiX());
-				assertEquals(expected[3], ball.getiY());
+				Assert.assertEquals(expected[0], x);
+				Assert.assertEquals(expected[1], y);
+				Assert.assertEquals(expected[2], ball.getiX());
+				Assert.assertEquals(expected[3], ball.getiY());
 
 			}
 		}
