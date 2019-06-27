@@ -1,4 +1,5 @@
-Requirement Java 1.8 or above
+Requirement Java 1.8 or above.
+
 sun.audio.* should be available to support background music
 
 IDE used: 
