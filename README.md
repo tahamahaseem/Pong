@@ -16,3 +16,9 @@ Main class is com.tahama.pong.Main
 Use left-click on mouse to press buttons. \
 Player 1 uses W and S keys to move up and down respectively. \
 Player 2 uses up and down arrow keys to move up and down respectively.
+
+**Music** \
+Created using [Soundation](https://soundation.com)
+
+**Art** \
+Created using Photoshop
