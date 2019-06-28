@@ -1,4 +1,4 @@
-[Game play demo](https://www.youtube.com/watch?v=ymWVgUqDeP4)
+[Click for game play demo video](https://www.youtube.com/watch?v=ymWVgUqDeP4)
 
 **Requirements** \
 Specifically use Java 1.8 \
