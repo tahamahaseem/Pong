@@ -1,5 +1,5 @@
 **Requirements** \
-Java 1.8 or above. \
+Java 1.8 \
 TestNG plugin to run test.
 
 IDE used: Spring Tool Suite \
