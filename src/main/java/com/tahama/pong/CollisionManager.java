@@ -18,7 +18,7 @@ public class CollisionManager {//In charge of checking whether the ball has hit 
 						ball.setiY(ball.getiY() * 0 - 1);
 					}
 				} else if (ballY > (y + height / 2)) {//checks if ball is hitting below part of the racket
-					if (ballY > (3 * (y + height) / 4)) {//checks if the ball is hitting the top most segment of the racket
+					if (ballY > (y + (3 * height / 4))) {//checks if the ball is hitting the top most segment of the racket
 						ball.setiY(ball.getiY() * 0 + 2);
 					} else {
 						ball.setiY(ball.getiY() * 0 + 1);
@@ -44,7 +44,7 @@ public class CollisionManager {//In charge of checking whether the ball has hit 
 						ball.setiY(ball.getiY() * 0 - 1);
 					}
 				} else if (ballY > (y + height / 2)) {//checks if ball is hitting below part of the racket
-					if (ballY > (3 * y + height / 2)) {//checks if the ball is hitting the top most segment of the racket
+					if (ballY > (y + (3 * height / 4))) {//checks if the ball is hitting the top most segment of the racket
 						ball.setiY(ball.getiY() * 0 + 2);
 					} else {
 						ball.setiY(ball.getiY() * 0 + 1);
