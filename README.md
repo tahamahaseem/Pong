@@ -5,11 +5,7 @@ This is a classic Pong game implemented in Java using the Swing library. Compete
 
 ## Gameplay
 
-<div style="text-align: center;">
-  <a href="https://github.com/tahamahaseem/Pong/assets/52297139/74e61e0e-2ccf-4d99-b88f-9d092d993f48">
-    <img src="https://github.com/tahamahaseem/Pong/assets/52297139/74e61e0e-2ccf-4d99-b88f-9d092d993f48" alt="Demo Video" />
-  </a>
-</div>
+https://github.com/tahamahaseem/Pong/assets/52297139/74e61e0e-2ccf-4d99-b88f-9d092d993f48
 
 
 ## Assets
