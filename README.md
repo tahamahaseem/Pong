@@ -5,7 +5,9 @@ This is a classic Pong game implemented in Java using the Swing library. Compete
 
 ## Assets
 
-The assets used in the game, include the background images created using Photoshop and java Graphics class to draw the paddles and ball. Here are the following backgrounds the player may see during gameplay:
+The assets used in the game, include the background images created using Photoshop and java Graphics class to draw the paddles and ball. 
+
+Here are the following backgrounds the player may see during gameplay:
 
 <table>
   <tr>
