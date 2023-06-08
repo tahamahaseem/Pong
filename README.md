@@ -1,24 +1,61 @@
-[Click for game play demo video](https://www.youtube.com/watch?v=ymWVgUqDeP4)
+# Pong Game
 
-**Requirements** \
-Specifically use Java 1.8 \
-TestNG plugin to run test.
+## Description
+This is a classic Pong game implemented in Java using the Swing library. Compete against a friend in a thrilling two-player match where you control paddles to volley the ball back and forth. Enjoy the nostalgic gameplay and relive the excitement of the arcade era.
 
-IDE used: Spring Tool Suite \
-Version: 3.9.2.RELEASE \
-Build Id: 201712210947 \
-Platform: Eclipse Oxygen.2 (4.7.2)
+## Assets
 
-To run pong import it as an existing maven project. \
-Main class is com.tahama.pong.Main
+The assets used in the game, include the background images created using Photoshop and java Graphics class to draw the paddles and ball.
 
-**Controls of the game:** \
-Use left-click on mouse to press buttons. \
-Player 1 uses W and S keys to move up and down respectively. \
-Player 2 uses up and down arrow keys to move up and down respectively.
+<table>
+  <tr>
+    <td>
+      <img width="576" alt="DayTime" src="https://github.com/tahamahaseem/Pong/assets/52297139/813f4b20-f61b-4c89-866c-7b600688df46">
+    </td>
+    <td>
+      <img width="576" alt="NightTime" src="https://github.com/tahamahaseem/Pong/assets/52297139/5c07f750-03fc-49a3-8eb9-9435039324ef">
+    </td>
+    <td>
+      <img width="576" alt="RainyDay" src="https://github.com/tahamahaseem/Pong/assets/52297139/01bb9b07-0139-46bc-9b7a-4f7502509814">
+    </td>
+    <td>
+      <img width="576" alt="SunRise" src="https://github.com/tahamahaseem/Pong/assets/52297139/c1f9369e-b57a-4d83-bb4a-5784d12fd219">
+    </td>
+  </tr>
+</table>
 
-**Music** \
-Created using [Soundation](https://soundation.com)
+[Click here to watch the game play demo video](https://www.youtube.com/watch?v=ymWVgUqDeP4)
 
-**Art** \
-Created using Photoshop
+## Requirements
+
+- Java 1.8
+- TestNG plugin to run tests
+
+## IDE Used
+
+- Spring Tool Suite
+- Version: 3.9.2.RELEASE
+- Build Id: 201712210947
+- Platform: Eclipse Oxygen.2 (4.7.2)
+
+## How to Run
+
+1. Import the project as an existing Maven project.
+2. Set `com.tahama.pong.Main` as the main class.
+
+## Controls
+
+- Use left-click on the mouse to press buttons.
+- Player 1: W (up), S (down) keys to move.
+- Player 2: Up arrow (up), Down arrow (down) keys to move.
+
+## Music
+
+- Music created using [Soundation](https://soundation.com).
+
+## Art
+
+- Art created using Photoshop.
+
+
+
