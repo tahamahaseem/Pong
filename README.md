@@ -8,7 +8,6 @@ This is a classic Pong game implemented in Java using the Swing library. Compete
 <div style="text-align: center;">
   <video controls width="640" height="360">
     <source src="https://github.com/tahamahaseem/Pong/assets/52297139/74e61e0e-2ccf-4d99-b88f-9d092d993f48" type="video/mp4">
-    Your browser does not support the video tag.
   </video>
 </div>
 
