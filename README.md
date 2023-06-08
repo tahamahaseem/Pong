@@ -5,21 +5,29 @@ This is a classic Pong game implemented in Java using the Swing library. Compete
 
 ## Assets
 
-The assets used in the game, include the background images created using Photoshop and java Graphics class to draw the paddles and ball.
+The assets used in the game, include the background images created using Photoshop and java Graphics class to draw the paddles and ball. Here are the following backgrounds the player may see during gameplay:
 
 <table>
   <tr>
-    <td>
+    <td align="center">
       <img width="576" alt="DayTime" src="https://github.com/tahamahaseem/Pong/assets/52297139/813f4b20-f61b-4c89-866c-7b600688df46">
+      <br>
+      <strong>DayTime</strong>
     </td>
-    <td>
+    <td align="center">
       <img width="576" alt="NightTime" src="https://github.com/tahamahaseem/Pong/assets/52297139/5c07f750-03fc-49a3-8eb9-9435039324ef">
+      <br>
+      <strong>NightTime</strong>
     </td>
-    <td>
+    <td align="center">
       <img width="576" alt="RainyDay" src="https://github.com/tahamahaseem/Pong/assets/52297139/01bb9b07-0139-46bc-9b7a-4f7502509814">
+      <br>
+      <strong>RainyDay</strong>
     </td>
-    <td>
+    <td align="center">
       <img width="576" alt="SunRise" src="https://github.com/tahamahaseem/Pong/assets/52297139/c1f9369e-b57a-4d83-bb4a-5784d12fd219">
+      <br>
+      <strong>SunRise</strong>
     </td>
   </tr>
 </table>
