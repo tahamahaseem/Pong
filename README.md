@@ -3,6 +3,10 @@
 ## Description
 This is a classic Pong game implemented in Java using the Swing library. Compete against a friend in a thrilling two-player match where you control paddles to volley the ball back and forth. Enjoy the nostalgic gameplay and relive the excitement of the arcade era.
 
+## Gameplay
+
+
+
 ## Assets
 
 The assets used in the game, include the background images created using Photoshop and java Graphics class to draw the paddles and ball. 
@@ -33,8 +37,6 @@ Here are the following backgrounds the player may see during gameplay:
     </td>
   </tr>
 </table>
-
-[Click here to watch the game play demo video](https://www.youtube.com/watch?v=ymWVgUqDeP4)
 
 ## Requirements
 
