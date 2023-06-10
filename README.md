@@ -1,4 +1,4 @@
-# Pong Game
+# Java Swing Pong Game
 
 ## Description
 This is a classic Pong game implemented in Java using the Swing library. Compete against a friend in a thrilling two-player match where you control paddles to volley the ball back and forth. Enjoy the nostalgic gameplay and relive the excitement of the arcade era.
